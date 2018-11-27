@@ -1,0 +1,38 @@
+<!-- <head>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head> -->
+
+<!-- <body class="loginBody"> -->
+        <!-- <form name="myform" novalidate> -->
+            <div class="svg">
+                <img src="/svg/undraw_authentication_fsn5.svg" alt="undraw">
+            </div>
+            
+                <form name='myForm' ng-submit='login()' novalidate>
+                    <div class="loginForm">
+            
+                    <div class="intro">
+                        <h1>Hi there!</h1>
+                        <p>To access the information you should log-In</p>
+                        <!-- <p>
+                            {{myForm.email.$valid}}
+                        </p> -->
+                        <p class="message" ng-show='message'>
+                            {{message}}
+                        </p>
+                    </div>
+            
+                    <div class="wrapper">
+                        <input type="email" name="email" placeholder="Email" ng-model='user.email' ng-required='true'>
+                        <!-- <p class="error" ng-show='myform.email.$invalid && myform.email.$touched'>Please type correct email</p> -->
+
+                        <input type="password" name="password" placeholder="Password" ng-model='user.password' ng-required='true'> <br>
+                        <button type="submit" class="btn-login btn" ng-disabled='myform.$invalid'>Login</button>
+                    </div>
+                        <p>or <a ng-href="#!/register">Register</a></p>
+                    </div>
+            
+                </form>
+                <!-- </form>   -->
+<!-- </body> -->

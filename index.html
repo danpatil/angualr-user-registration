@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stalwart Assignment</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="/js/libraries/angular/angular.min.js"></script>
+    <script src="/js/libraries/angular/angular-route.min.js"></script>
+    <script src="/js/libraries/angular/angular-animate.min.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDJxoNND-LpxUbOxpV2V6iwL-Oaaw-Xbfg",
+        authDomain: "angular-82922.firebaseapp.com",
+        databaseURL: "https://angular-82922.firebaseio.com",
+        projectId: "angular-82922",
+        storageBucket: "angular-82922.appspot.com",
+        messagingSenderId: "225197267021"
+    };
+    firebase.initializeApp(config);
+    </script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/services/authentication.js"></script>
+    <script src="/js/controllers/registration.js"></script>
+    <script src="/js/controllers/success.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav ng-include="'views/navigation.html'"></nav>
+    </header>
+    <div class="page">
+        <main role="main" ng-view>
+        </main>
+    </div>
+</body>
+</html>

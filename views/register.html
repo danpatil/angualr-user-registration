@@ -1,0 +1,53 @@
+<!-- <head>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head> -->
+
+<section>
+    <h1>User Registration in Angular.js</h1>
+    <form ng-submit='register()' name="myForm" novalidate>
+        <div class="registerForm">
+
+        <div class="avatar item">
+            <img class="registerSvg" src="https://source.unsplash.com/400x400" alt="Avatar">
+            <p class="avatarP">Dinesh Patil</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, commodi?</p>
+            <p class="message" ng-show='message'>
+                    {{message}}
+                </p>
+        </div>
+
+        <div class="user-details item">
+          <input type="text" name="firstName" placeholder="First Name"
+          ng-model='user.firstName' ng-required='true'> <br>
+
+          <input type="text" name="lastName" placeholder="Last Name"
+          ng-model='user.lastName' ng-required='true'> <br>
+
+          <input type="tel" name="phone" placeholder="Phone Number"
+          ng-model='user.phone' ng-required='true'> <br>
+
+          <textarea name="bio" cols="30" rows="10" placeholder="Bio"
+          ng-model='user.bio' ng-required='true'></textarea> <br>
+          <!-- <button type="submit" class="btn">Submit</button> -->
+        </div>
+
+        <div class="account-details item">
+            <!-- <input type="text" name="userName" placeholder="User Name"
+            ng-model='user.userName' ng-required='true'> <br> -->
+
+            <input type="email" name="email" placeholder="Email" 
+            ng-model='user.email' ng-required='true'> <br>
+
+            <input type="password" name="password" placeholder="Password" 
+            ng-model='user.password' ng-required='true'>
+
+        </div>
+    </div>
+        <div class="button">
+                <button type="submit" class="btn" ng-disabled='myform.$invalid'>Submit</button>
+        </div>
+    </form>
+    
+    
+</section>
