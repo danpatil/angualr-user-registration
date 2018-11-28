@@ -37,7 +37,7 @@ myApp.factory('Authentication',
        }
        ref.push(data); // push the data to ref= users tree.
         $rootScope.message = "Hi " + user.firstName +
-        ", Thanks for registering";
+        ", Thanks for registering. Now login.";
       }).catch(function(error) {
         $rootScope.message = error.message;
       }); //createUserWithEmailAndPassword
