@@ -242,10 +242,11 @@ border: 5px solid #509D12;
   .logout-link {
     display: grid;
     justify-content: center;
+    margin-bottom: 10px;
   }
 
   .logout-link a {
-      background: mistyrose;
+      background: #ffc600;
       padding: 20px 30px;
       border: 5px solid rgba(0, 0, 0, 0.03);
       border-radius: 5px;
@@ -268,6 +269,20 @@ border: 5px solid #509D12;
 
   .avatar {
       align-self: flex-start;
+  }
+
+  .register-login {
+      margin-top: 10px;
+      display: grid;
+      justify-content: center;
+  }
+
+  .register-login a {
+      background: #ffc600;
+      padding: 10px 20px;
+      border: 5px solid rgba(0, 0, 0, 0.09);
+      border-radius: 5px;
+      color: #272727;
   }
 
 
