@@ -1,7 +1,3 @@
-<!-- <head>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
-</head> -->
 
 <body>
     <div class="svg-wrapper">
@@ -9,8 +5,12 @@
     </div>
     <div class="main-intro">
         <h1>Hello, You are logged in!</h1>
-        <p>
+        <p class="success-center">
             {{message}}
         </p>
+
+        <div class="logout-link">
+            <a ng-href="#!/login" ng-click='logout()'>Logout</a>
+        </div>
     </div> 
 </body>

@@ -92,8 +92,6 @@ button {
     margin-top: 50px;
 }
 
-
-
 .loginForm {
     display: grid;
     grid-template-columns: 1fr;
@@ -234,6 +232,38 @@ border: 5px solid #509D12;
       text-align: center;
       border-radius: 4px;
       box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.03);
+  }
+
+  .success-center {
+      font-size: 30px;
+      text-align: center;
+  }
+
+  .logout-link {
+    display: grid;
+    justify-content: center;
+  }
+
+  .logout-link a {
+      background: mistyrose;
+      padding: 20px 30px;
+      border: 5px solid rgba(0, 0, 0, 0.03);
+      border-radius: 5px;
+      color: #272727;
+  }
+
+  p .register-btn {
+      margin-top: 20px;
+      display: inline;
+  }
+
+  .register-btn a {
+      background: #ffc600;
+      padding: 10px 20px;
+      border: 5px solid rgba(0, 0, 0, 0.09);
+      border-radius: 5px;
+      color: #272727;
+      margin-top: 20px;
   }
 
   
