@@ -266,6 +266,12 @@ border: 5px solid #509D12;
       margin-top: 20px;
   }
 
+  .avatar {
+      align-self: flex-start;
+  }
+
+
+
   
 
 
