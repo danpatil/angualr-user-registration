@@ -285,6 +285,21 @@ border: 5px solid #509D12;
       color: #272727;
   }
 
+@media screen and (max-width: 800px) {
+    .loginForm {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .registerForm {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}
+
+
 
 
   
