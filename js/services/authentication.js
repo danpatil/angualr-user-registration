@@ -29,11 +29,14 @@ myApp.factory('Authentication',
        var database = firebase.database(); // storing database in database variable.
        var refe = database.ref('users'); // creating first tree with users.
        var data = {
-         date: firebase.database.ServerValue.TIMESTAMP,
          firstname: user.firstName,
          lastname: user.lastName,
          bio: user.bio,
-         email: user.email
+        //  bio: user.birthDate,
+         email: user.email,
+         middleName: user.middleName,
+        //  birthDate: user.birthDate,
+         password: user.password
        }
        ref.push(data); // push the data to ref= users tree.
         $rootScope.message = "Hi " + user.firstName +
