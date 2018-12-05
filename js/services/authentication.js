@@ -33,7 +33,8 @@ myApp.factory('Authentication',
          lastname: user.lastName,
          bio: user.bio,
          email: user.email,
-         BirthDate: user.birthDate,
+         birthdate: user.birthDate,
+         middleName: user.middelName,
          password: user.password
        }
        ref.push(data); // push the data to ref= users tree.
