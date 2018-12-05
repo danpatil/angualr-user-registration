@@ -33,7 +33,7 @@ myApp.factory('Authentication',
          lastname: user.lastName,
          bio: user.bio,
          email: user.email,
-         birthdate: user.birthDate,
+         date: user.date,
          middleName: user.middelName,
          password: user.password
        }
